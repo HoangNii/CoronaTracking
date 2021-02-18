@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_splash"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".activities.SplashActivity">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:src="@drawable/ic_virus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize">
+        <TextView
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#fff"
+            android:text=" Corona"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#DD2C00"
+            android:text="Tracker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ProgressBar
+        android:indeterminate="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+</LinearLayout>

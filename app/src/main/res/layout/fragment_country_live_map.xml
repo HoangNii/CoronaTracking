@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#313131"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true">
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bt_back"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="17dp"
+            android:tint="#FAFAFA"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_width="60dp"
+            android:layout_height="?actionBarSize"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:gravity="center_vertical"
+            android:layout_marginStart="60dp"
+            android:textColor="#FAFAFA"
+            android:text="Vietnam"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>
